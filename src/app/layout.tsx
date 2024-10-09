@@ -12,10 +12,10 @@ import { initLogger } from "../logger";
 import ClientTrackersProvider from "./providers/ClientTrackersProvider";
 import Loading from "../components/ui/loading";
 
-const APP_NAME = "Saas template";
-const APP_DEFAULT_TITLE = "Saas template";
-const APP_TITLE_TEMPLATE = "%s - Saas template";
-const APP_DESCRIPTION = "Build your SaaS easily!";
+const APP_NAME = "Truth or Dare";
+const APP_DEFAULT_TITLE = "Truth or Dare";
+const APP_TITLE_TEMPLATE = "%s - Truth or Dare";
+const APP_DESCRIPTION = "Unleash the fun with Truth or Dare!";
 
 interface RootLayoutProps {
   children: React.ReactNode;
@@ -81,11 +81,11 @@ export default function Layout({ children }: RootLayoutProps) {
             <SessionWrapper>
               <ThemeProvider>
                 {/* <AuthProvider> */}
-                  <TopLoaderProvider />
-                  {children}
-                  <ClientTrackersProvider />
-                  <SpeedInsights />
-                  <Analytics />
+                <TopLoaderProvider />
+                {children}
+                <ClientTrackersProvider />
+                <SpeedInsights />
+                <Analytics />
                 {/* </AuthProvider> */}
               </ThemeProvider>
             </SessionWrapper>
