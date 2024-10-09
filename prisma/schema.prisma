@@ -113,3 +113,13 @@ model Payment {
 
   @@map("payments")
 }
+
+model TruthOrDare {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  question  String
+  type      String   @default("truth") // truth | dare
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("truthOrDare")
+}

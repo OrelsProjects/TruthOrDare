@@ -6,5 +6,9 @@ interface RootLayoutProps {
 }
 
 export default function Layout({ children }: RootLayoutProps) {
-  return <ContentLayout>{children}</ContentLayout>;
+  return (
+    // <ContentLayout>
+    children
+    // </ContentLayout>
+  );
 }

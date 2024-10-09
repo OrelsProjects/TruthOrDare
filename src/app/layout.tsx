@@ -80,13 +80,13 @@ export default function Layout({ children }: RootLayoutProps) {
           <StoreProvider>
             <SessionWrapper>
               <ThemeProvider>
-                <AuthProvider>
+                {/* <AuthProvider> */}
                   <TopLoaderProvider />
                   {children}
                   <ClientTrackersProvider />
                   <SpeedInsights />
                   <Analytics />
-                </AuthProvider>
+                {/* </AuthProvider> */}
               </ThemeProvider>
             </SessionWrapper>
           </StoreProvider>
