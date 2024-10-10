@@ -26,7 +26,7 @@ const HomePage: React.FC = () => {
           <span>Create</span>
         </Button>
         <Button
-          onClick={() => router.push("/play")}
+          onClick={() => router.push("/play/select")}
           className="bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-full shadow-lg transform hover:scale-105 transition duration-300 flex flex-row items-center justify-center space-x-2"
         >
           <FaPlay className="w-5 h-5" />
